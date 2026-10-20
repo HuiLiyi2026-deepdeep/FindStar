@@ -1,0 +1,114 @@
+{
+  "archive": {
+    "name": "FindStar-Windows-x64-v1.3.0.zip",
+    "bytes": 170553413,
+    "sha256": "34f6483290380574461d438e4ea2c40d33d320ec4f94f140b29eeb8f89b86ecb"
+  },
+  "parts": [
+    {
+      "name": "FindStar-v1.3.0.zip.part01",
+      "bytes": 8388608,
+      "sha256": "d7ffcddba6dd63d640795c0d66f9c7f75d046c1a8e3bd0c3cb912871fac5165a"
+    },
+    {
+      "name": "FindStar-v1.3.0.zip.part02",
+      "bytes": 8388608,
+      "sha256": "a545b43b7a82e3d858310e05b08e45667a93b43a7140b6c18fbbb03fdca79518"
+    },
+    {
+      "name": "FindStar-v1.3.0.zip.part03",
+      "bytes": 8388608,
+      "sha256": "bd14e46cb0e35df5e9bdfda92862020627cd433b01c1430e8530470901a9a3d7"
+    },
+    {
+      "name": "FindStar-v1.3.0.zip.part04",
+      "bytes": 8388608,
+      "sha256": "104c38f1fea7e9f44bbd11dae2501f47accfb0373069d1065767692069205147"
+    },
+    {
+      "name": "FindStar-v1.3.0.zip.part05",
+      "bytes": 8388608,
+      "sha256": "eca34bae2879d527b381319ea031a51561afbb00593c3506432b1a2a28c15f7e"
+    },
+    {
+      "name": "FindStar-v1.3.0.zip.part06",
+      "bytes": 8388608,
+      "sha256": "1706a62058a90d403068d81f8166239d0098c87b4824cfef2994b707d8ec5999"
+    },
+    {
+      "name": "FindStar-v1.3.0.zip.part07",
+      "bytes": 8388608,
+      "sha256": "0bb9bff7a8ecf41377b8fb7fe2caff227cb75ced69b8246f73e161592a845e63"
+    },
+    {
+      "name": "FindStar-v1.3.0.zip.part08",
+      "bytes": 8388608,
+      "sha256": "df911d9b7d593e5fc5d955e3528131cfc8c7d80a4e7579e29d806d6ea9f773c7"
+    },
+    {
+      "name": "FindStar-v1.3.0.zip.part09",
+      "bytes": 8388608,
+      "sha256": "422af5d5a807a4ebac5581d358b5d43c6da008a1b2f3a2f976fbaa74e6b3757d"
+    },
+    {
+      "name": "FindStar-v1.3.0.zip.part10",
+      "bytes": 8388608,
+      "sha256": "3a44105c3c40c4537975dd7caa3787f11683e7e56c2c84bbb903cee90f5e895c"
+    },
+    {
+      "name": "FindStar-v1.3.0.zip.part11",
+      "bytes": 8388608,
+      "sha256": "eb4092e14b3071b912129023d3b4f04f69c0647da40dd9cc9a1067187e0f66dc"
+    },
+    {
+      "name": "FindStar-v1.3.0.zip.part12",
+      "bytes": 8388608,
+      "sha256": "7470d384c5ca6c3bd441e71fb6471545465d0a72c829c188b8f7e9615214f7a2"
+    },
+    {
+      "name": "FindStar-v1.3.0.zip.part13",
+      "bytes": 8388608,
+      "sha256": "8eb60466085af9b82a198fc70fd56ecb05c851ff2db7093a77937bd940395d28"
+    },
+    {
+      "name": "FindStar-v1.3.0.zip.part14",
+      "bytes": 8388608,
+      "sha256": "b97d0f14751e636cb8cac304395881fe1f41ee13f4878f2256bb03c459a19962"
+    },
+    {
+      "name": "FindStar-v1.3.0.zip.part15",
+      "bytes": 8388608,
+      "sha256": "28b9aab4de99760f54592ae6051a53647f852c9b587cff59fe05415ac039efaf"
+    },
+    {
+      "name": "FindStar-v1.3.0.zip.part16",
+      "bytes": 8388608,
+      "sha256": "b926eadf42345f8088be9315c1934d27a342fa4ea62ade297b6d8aad20c8a3d1"
+    },
+    {
+      "name": "FindStar-v1.3.0.zip.part17",
+      "bytes": 8388608,
+      "sha256": "313566237a7e2b88d54d6852f02933d3e4070081c22f9a445c50fd98e66ad3b4"
+    },
+    {
+      "name": "FindStar-v1.3.0.zip.part18",
+      "bytes": 8388608,
+      "sha256": "e98d8c753639aa0eb6dc0b121e5891ef3b03f281ee8d02aca9f6de7fa9381670"
+    },
+    {
+      "name": "FindStar-v1.3.0.zip.part19",
+      "bytes": 8388608,
+      "sha256": "db838d870bad45e2f227c22d10e767518441800e2586f8a0c0bd943e47fd1f85"
+    },
+    {
+      "name": "FindStar-v1.3.0.zip.part20",
+      "bytes": 8388608,
+      "sha256": "e9837a0c0f8f7acb4138861f5a75ef5eb6c10e8bef5e955e0711a375dbf3f40c"
+    },
+    {
+      "name": "FindStar-v1.3.0.zip.part21",
+      "bytes": 2781253,
+      "sha256": "2f7ba0806cb3aff3354f7f029c60085ea0c0d77166a950e7d7f0da20c14082db"
+    }
+  ]
+}

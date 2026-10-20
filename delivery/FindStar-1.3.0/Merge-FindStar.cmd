@@ -1,0 +1,8 @@
+@echo off
+setlocal
+set "FINDSTAR_PARTS=%~dp0"
+powershell.exe -NoLogo -NoProfile -Command "$ErrorActionPreference='Stop'; $base=$env:FINDSTAR_PARTS; $m=Get-Content -LiteralPath (Join-Path $base 'SHA256SUMS.json') -Raw | ConvertFrom-Json; $target=Join-Path $base $m.archive.name; $temp=$null; try { foreach($p in $m.parts){ $f=Join-Path $base $p.name; if(!(Test-Path -LiteralPath $f)){throw ('Missing part: '+$p.name)}; if((Get-Item -LiteralPath $f).Length -ne $p.bytes -or (Get-FileHash -LiteralPath $f -Algorithm SHA256).Hash -ne $p.sha256){throw ('Invalid part: '+$p.name)} }; if(Test-Path -LiteralPath $target){if((Get-FileHash -LiteralPath $target -Algorithm SHA256).Hash -eq $m.archive.sha256){Write-Host 'ZIP already complete and verified.';exit 0};throw 'Output ZIP exists with different bytes. Move it away first.'}; $temp=$target+'.'+[guid]::NewGuid().ToString('N')+'.partial'; $stream=[IO.File]::Open($temp,[IO.FileMode]::CreateNew); try {foreach($p in $m.parts){$inputStream=[IO.File]::OpenRead((Join-Path $base $p.name));try{$inputStream.CopyTo($stream)}finally{$inputStream.Dispose()}}}finally{$stream.Dispose()}; if((Get-FileHash -LiteralPath $temp -Algorithm SHA256).Hash -ne $m.archive.sha256){throw 'Combined SHA256 mismatch'}; Move-Item -LiteralPath $temp -Destination $target; $temp=$null; Write-Host ('SUCCESS: '+$target); Write-Host 'Extract the complete ZIP, then run FindStar.exe.' } catch {if($temp -and (Test-Path -LiteralPath $temp)){Remove-Item -LiteralPath $temp};Write-Host ('ERROR: '+$_.Exception.Message);exit 1}"
+set "FINDSTAR_EXIT=%ERRORLEVEL%"
+echo.
+pause
+exit /b %FINDSTAR_EXIT%
